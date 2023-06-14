@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="SuiteSalesforce">
-  <test name="Tests">
+	
+	<listeners>
+		<listener class-name="com.automation.utility.TestEventListernersUtility">
+		</listener>
+	</listeners>
+  <test name="Tests">  
 	  <parameter name = "browserName" value= "chrome"/>
     <classes>
       <class name="com.automation.tests.automationScripts"/>

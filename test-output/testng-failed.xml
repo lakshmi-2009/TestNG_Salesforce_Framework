@@ -6,9 +6,8 @@
       <class name="com.automation.tests.automationScripts">
         <methods>
           <include name="BeforeMethod"/>
+          <include name="TC_5_wrongLogin_credentials"/>
           <include name="BeforeTest"/>
-          <include name="tearDownAfterTestMethod"/>
-          <include name="TC_1_error_login_salesforce_testscript"/>
         </methods>
       </class> <!-- com.automation.tests.automationScripts -->
     </classes>

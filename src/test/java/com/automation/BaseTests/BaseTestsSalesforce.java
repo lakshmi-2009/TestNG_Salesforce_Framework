@@ -27,6 +27,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -82,11 +83,12 @@ public class BaseTestsSalesforce {
 	}
 	
 	
-	@AfterMethod
+	/*@AfterMethod
 	public void tearDownAfterTestMethod() {
+		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 		driver.close();
 		log.info("driver is closed");
-	}
+	}*/
 	
 	
 	
@@ -161,11 +163,16 @@ public class BaseTestsSalesforce {
 			    wait.until(ExpectedConditions.elementToBeClickable(ele));
 			}
 			
+			public void implicitWait() {
+				driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			}
+			
 	//=================================================================//	
 			
 			public void refreshPage() {
 				driver.navigate().refresh();
 				log.info(" refreshed the page ");
+				report.logTestInfo("page is refreshed");
 			}
 			
 	//=================================================================//
@@ -185,18 +192,53 @@ public class BaseTestsSalesforce {
 	   	     element.clear();
 	   	     element.sendKeys(data);
 	   	   log.info(objectName + " is entered to the text filed"); 
+	    	//report.logTestInfo("pass: "+objectName +"is entered");
 	   	   //report.logTestInfo("pass "+objectName+" is entered into field");
-	        } else 
+	        } else 	
 	       log.error(objectName+" element is not displayed");
+		   //report.logTestInfo(objectName+" is not entered into field");
+		  
 	}
 	
 	//=================================================================//		
 	
 	public  void clickButton(WebElement LoginButton) {
 		  LoginButton= driver.findElement(By.id("Login"));
+		  implicitWait();
 		  LoginButton.click();
 		  log.info("login button is clicked");
+		  //report.logTestInfo("login button is clicked");
 	       }
+	//=================================================================//
+	
+	
+	public void clickOnButton(WebElement element, String object) {
+		WaitUntilElementVisible(element, object);
+		element.click();
+		log.info(element+" is clicked");
+	}
+	
+	//=================================================================//
+	public void clickOnCheckbox(WebElement element, String object) {
+		WaitUntilElementVisible(element, object);
+		if(element.isSelected()) {
+			log.info(element+" is already selected");
+		}
+		else {
+			element.click();
+		}
+	}
+	
+	//=================================================================//
+	public  void compareLoginErrorText() {
+		String expectedError = appProp.getProperty("login.error.message");
+	    By error = By.xpath("//*[@id=\"error\"]");
+	    WebElement errorMessage = driver.findElement(error);
+	    String actualText = errorMessage.getText();
+	    Assert.assertEquals(expectedError,actualText);
+	    log.info("error message compared");
+	    report.logTestpassed("error message matched");
+	}
 	//=================================================================//	
 	public File getScreenShot() {
 		String date = new SimpleDateFormat("yyyy_mm__dd_hh_mm_ss").format(new Date());
@@ -215,6 +257,31 @@ public class BaseTestsSalesforce {
 	}
 	
 	//=================================================================//		
+	
+	public void loginToSalesforce() {
+		getCredentials();
+		compareTitle();
+		By userName = By.name("username");
+		WebElement userNameElement = driver.findElement(userName);
+		WaitUntilElementVisible(userNameElement, "username field");
+		enterText(userNameElement, userId, "userName");
+		
+		By passwrd = By.xpath("//input[@name='pw']");
+		WebElement passwordElement = driver.findElement(passwrd);
+		WaitUntilElementVisible(passwordElement, "password field");
+		enterText(passwordElement,password,"passwrd");
+		
+		//By button = By.tagName("button");
+		WebElement buttonElement=null;
+		clickButton(buttonElement);
+		String homePageTitle=driver.getTitle();
+		log.info(homePageTitle);
+		//report.logTestpassed( homePageTitle+" is displayed");
+	}
+	//=================================================================//
+	
+	
+	
 	
 }	
 	
