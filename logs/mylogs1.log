@@ -1,0 +1,47 @@
+20230613 21:10:16 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java136 - https://login.salesforce.com/went to url and fetched url
+20230613 21:10:16 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 21:10:16 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java146 -  got the title of page 
+20230613 21:10:16 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java186 - userName is entered to the text filed
+20230613 21:10:16 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java186 - passwrd is entered to the text filed
+20230613 21:10:19 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java197 - login button is clicked
+20230613 21:10:19 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java87 - driver is closed
+20230613 21:14:11 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java136 - https://login.salesforce.com/went to url and fetched url
+20230613 21:14:11 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 21:14:11 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java146 -  got the title of page 
+20230613 21:14:11 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java186 - userName is entered to the text filed
+20230613 21:14:11 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java186 - passwrd is entered to the text filed
+20230613 21:14:14 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java197 - login button is clicked
+20230613 21:14:14 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java87 - driver is closed
+20230613 21:31:52 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java136 - https://login.salesforce.com/went to url and fetched url
+20230613 21:31:52 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 21:31:52 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java146 -  got the title of page 
+20230613 21:31:52 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java186 - userName is entered to the text filed
+20230613 21:31:53 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java197 - login button is clicked
+20230613 21:31:53 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java87 - driver is closed
+20230613 22:32:12 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java141 - https://login.salesforce.com/went to url and fetched url
+20230613 22:32:12 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 22:32:12 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java151 -  got the title of page 
+20230613 22:32:12 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java191 - userName is entered to the text filed
+20230613 22:32:13 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java202 - login button is clicked
+20230613 22:32:13 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java92 - driver is closed
+20230613 22:37:46 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java137 - https://login.salesforce.com/went to url and fetched url
+20230613 22:37:46 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 22:37:46 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java147 -  got the title of page 
+20230613 22:37:46 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java187 - userName is entered to the text filed
+20230613 22:37:47 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java198 - login button is clicked
+20230613 22:37:47 INFO  [main] tests.automationScripts automationScripts.java100 - error message compared
+20230613 22:37:47 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java88 - driver is closed
+20230613 22:49:53 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java137 - https://login.salesforce.com/went to url and fetched url
+20230613 22:49:53 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 22:49:53 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java147 -  got the title of page 
+20230613 22:49:54 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java187 - userName is entered to the text filed
+20230613 22:49:54 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java198 - login button is clicked
+20230613 22:49:54 INFO  [main] tests.automationScripts automationScripts.java100 - error message compared
+20230613 22:49:54 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java88 - driver is closed
+20230613 22:51:49 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java137 - https://login.salesforce.com/went to url and fetched url
+20230613 22:51:49 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java70 - url entered successfully
+20230613 22:51:49 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java147 -  got the title of page 
+20230613 22:51:50 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java187 - userName is entered to the text filed
+20230613 22:51:50 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java198 - login button is clicked
+20230613 22:51:50 INFO  [main] tests.automationScripts automationScripts.java100 - error message compared
+20230613 22:51:51 INFO  [main] BaseTests.BaseTestsSalesforce BaseTestsSalesforce.java88 - driver is closed
